@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='0 0 100 100' fill='%232E8BFF' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 5L5 27.5L50 50L95 27.5L50 5Z' /%3E%3Cpath d='M5 32.5L50 55L95 32.5L50 77.5L5 32.5Z' opacity='0.6' /%3E%3C/svg%3E" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NikharaBrief: AI Brief Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              'brand-bg-primary': '#0E141B',
+              'brand-bg-secondary': '#1C232C',
+              'brand-accent-primary': '#2E8BFF',
+              'brand-accent-secondary': '#FFB84D',
+              'brand-highlight': '#3DDC97',
+              'brand-error': '#FF5C5C',
+              'brand-text-primary': '#E9EDF2',
+              'brand-text-secondary': '#A0A8B0',
+              'brand-border': '#2A313A',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.26.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-brand-bg-primary text-brand-text-primary">
+    <div class="absolute top-0 z-[-2] h-screen w-screen bg-brand-bg-primary bg-[radial-gradient(#2A313A_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
