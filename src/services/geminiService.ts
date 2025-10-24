@@ -1,4 +1,5 @@
 
+
 import { GoogleGenAI } from "@google/genai";
 import type { GeneratorFormData, Brief } from '../types';
 
@@ -96,6 +97,11 @@ export const generateCreativeBrief = async (formData: GeneratorFormData): Promis
         });
 
         const text = response.text;
+        
+        if (!text) {
+          throw new Error("Received an empty response from the AI service.");
+        }
+
         const parsed = parseBriefText(text);
         
         if (!parsed.companyName || !parsed.companyDescription || !parsed.projectDescription || !parsed.deadline) {

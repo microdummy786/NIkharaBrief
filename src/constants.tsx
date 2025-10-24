@@ -1,3 +1,4 @@
+
 // Fix: Import React to provide types for React.FC and React.SVGProps.
 import React from 'react';
 import type { Page } from './types';
